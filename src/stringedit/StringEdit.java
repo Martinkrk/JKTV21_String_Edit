@@ -47,7 +47,15 @@ public class StringEdit {
                     break;
                 case 3:
                     System.out.println("You chose " + number);
-                    System.out.println("The word is at index: ");
+                    System.err.println("Enter a word to find: ");
+                    subStr = scn.nextLine();
+                    index = str.indexOf(subStr);
+                    if(index < 0){
+                        System.out.println("There is no such word!");
+                    }
+                    else{
+                        System.out.println("Your word is at index: " + index);
+                    }
                     break;
                 case 4:
                     System.out.println("You chose " + number);
