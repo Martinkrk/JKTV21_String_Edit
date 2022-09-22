@@ -45,6 +45,9 @@ public class StringEdit {
                 case 3:
                     System.err.println("You chose " + number);
                     System.err.println("The word is at index: ");
+                case 4:
+                    System.err.println("You chose " + number);
+                    System.err.println("The updated string: \n" + str);
                 default:
                     break;
             }
