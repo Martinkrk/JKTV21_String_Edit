@@ -38,7 +38,15 @@ public class StringEdit {
                     break OUTER;
                 case 1:
                     System.out.println("You chose " + number);
-                    System.out.println("The amount of symbols is:" + str.length());
+                    int symbol_num = 0;
+                    String uppered = str.toUpperCase();
+                    for(int j = 0; j < str.length(); j++){
+                        for(char i = 'A'; i <= 'Z'; i++){
+                            if(uppered.substring(j,j+1).equals(i+"")) symbol_num++;
+                    }
+                        }
+                  
+                    System.out.println("The amount of symbols is:" + symbol_num);
                     break;
                 case 2:
                     System.out.println("You chose " + number);
